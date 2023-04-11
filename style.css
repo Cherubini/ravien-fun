@@ -1,0 +1,44 @@
+.img1{
+    animation-name: animation-first-photo;
+    animation-duration: 6s;
+    animation-timing-function: ease-out;
+    position: relative;
+    animation-fill-mode: forwards; 
+}
+
+.img2{
+    width: 60vw;
+    height: auto;
+    animation-name: animation-second-photo;
+    animation-duration: 0.3s;
+    position: relative;
+    animation-iteration-count: 10;
+}
+@keyframes animation-first-photo{
+
+    0% {
+        left: 0%;
+        top: 0px;
+   }
+   100%{
+        top: 0px;
+        left: 50%;
+   }
+
+}
+
+@keyframes animation-second-photo{
+
+    0% {
+        width: 60vw;
+    }
+
+    50% {
+        width: 58vw;
+    }
+
+   100%{
+        width: 60vw;
+   }
+
+}
